@@ -11,8 +11,7 @@ public class DockerWithChrome {
 	public static void main(String[] args) throws MalformedURLException {
 		
 		//DesiredCapabilities dc = DesiredCapabilities.chrome();
-		DesiredCapabilities dc = DesiredCapabilities.firefox();
-		
+		DesiredCapabilities dc = DesiredCapabilities.firefox();		
 		URL url = new URL("http://localhost:4444/wd/hub");
 		RemoteWebDriver driver = new RemoteWebDriver(url, dc);
 		
